@@ -4,14 +4,8 @@ const TableItem = ({ row }) => {
   return <div>{row.index}</div>;
 };
 
-const TableRow = ({ rows }) => {
-  return (
-    <div>
-      {rows.map((row) => (
-        <TableItem row={row} />
-      ))}
-    </div>
-  );
+const TableRow = ({ memberInfo, style }) => {
+  return <div style={style}>{memberInfo.name}</div>;
 };
 
 export default TableRow;
